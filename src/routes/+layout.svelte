@@ -4,33 +4,25 @@
 </script>
 
 <!-- App Shell -->
-<AppShell>
+<AppShell
+	slotPageContent='max-w-screen-xl w-full p-2 self-center'>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar>
+		<AppBar
+			slotLead='flex gap-2'>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<a href='/'>
+					<strong class="text-xl mr-8 uppercase">Lama</strong>
+				</a>
+				<a href='/questions'>
+					Questions
+				</a>
+
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Discord
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Twitter
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/Anders142536/lama-frontend"
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -40,5 +32,5 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<slot />
+		<slot />
 </AppShell>
