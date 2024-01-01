@@ -4,20 +4,15 @@
 </script>
 
 <!-- App Shell -->
-<AppShell
-	slotPageContent='max-w-screen-xl w-full p-2 self-center'>
+<AppShell slotPageContent="max-w-screen-xl w-full p-2 self-center">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar
-			slotLead='flex gap-2'>
+		<AppBar slotLead="flex gap-2">
 			<svelte:fragment slot="lead">
-				<a href='/'>
+				<a href="/">
 					<strong class="text-xl mr-8 uppercase">Lama</strong>
 				</a>
-				<a href='/questions'>
-					Questions
-				</a>
-
+				<a href="/questions"> Questions </a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
@@ -32,5 +27,5 @@
 		</AppBar>
 	</svelte:fragment>
 	<!-- Page Route Content -->
-		<slot />
+	<slot />
 </AppShell>
