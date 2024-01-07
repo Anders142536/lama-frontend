@@ -1,26 +1,28 @@
 export type Subject = {
 	id: number
-	name: string
+	label: string
 	topics: Topic[]
 }
 
 export type Topic = {
 	id: number
-	name: string
-	fachId: number // remove once new api is there
+	label: string
 }
 
 export type Question = {
 	id: number
-	subjectId: number
-	topicId: number
-	name: string
+	label: string
 	examMode: boolean
 	answers: Answer[]
 }
 
+export type QuestionSummary = {
+	id: number
+	label: string
+}
+
 export type Answer = {
 	id: number
-	name: string
+	label: string
 	correct: boolean
 }
